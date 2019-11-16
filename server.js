@@ -4,12 +4,12 @@ let url = require('url')
 app.set('view engine', 'ejs')
 require('@google-cloud/debug-agent').start();
 // Declared instance variable for Heart Rates
-let minimumHeartRate; // Declared variable for minimum This variable will store the Minimum heart rate sent in entire session
-let maximumHeartRate; // This variable will store the Maximum heart rate sent in entire session
+let minimumHeartRate = 0; // Declared variable for minimum This variable will store the Minimum heart rate sent in entire session
+let maximumHeartRate = 0; // This variable will store the Maximum heart rate sent in entire session
 let meanHeartRate = 0; // 
 let medianHeartRate = 0;
 let count = 0;
-let total;
+let total = 0;
 
 // Initialize an empty Array.
 let heartRateValues = [];
